@@ -1,0 +1,58 @@
+	@font-face{
+		font-family: "Raleway";
+		src: url('../../Font/Raleway-Thin.ttf');
+	}
+	*{
+		margin: 0px;
+		padding: 0px;
+		font-family: "Raleway";
+	}
+	body{
+		color: #fff;
+	}
+	.bg-image{
+		position: fixed;
+		background-image: url('../../../assets/img/12-michelin-pilot-sport-as-3.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		filter: blur(0px);
+		width: 100%;
+		height: 100%;
+		z-index: -100;
+		display: none;
+	}
+	.fake-loading{
+		margin: 0;
+		padding: 0;
+    	width: 50%;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%);
+		text-align: center;
+		z-index: 98;
+		color: white;
+		display: none;
+	}
+	.fake-loading .fa{
+		opacity: 1;
+		color:rgba(252, 229, 0, 0.5);
+	}
+	@keyframes bounce{
+		from{opacity: 1}
+		to{opacity: 0}
+	}
+	@keyframes blurry{
+		from{filter: blur(0px);}
+		to{filter: blur(5px);}
+	}
+	.content-center{
+		overflow: hidden;
+		background-color: rgba(0, 0, 0, 0.6);
+		display: none;
+	}
+	.img-logo, .img-map, .map-logo{
+		display: none;
+	}

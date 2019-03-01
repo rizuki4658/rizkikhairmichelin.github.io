@@ -1,0 +1,207 @@
+		@font-face{
+			font-family: "Raleway";
+			src: url('../../Font/Raleway-Thin.ttf');
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: "Raleway";
+		}
+		body{
+			background-color: #fff;
+		}
+		.video{
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			height: auto;
+			position: fixed;
+			z-index: -100;
+			top: 0px;
+			left: 0px;
+			background-color: #fff;
+			overflow: hidden;
+			display: none;
+		}
+		.closing-vid{
+			width: 100%;
+			height: 800px;
+			position: fixed;
+			z-index: -99;
+			top: 0px;
+			left: 0px;
+			background-color: transparent;
+			
+		}
+		.video #video-bg{
+			width: 100%;
+			position: relative;
+			filter: brightness(100%);
+			animation-name: brighter;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			animation-delay: 2.5s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes brighter{
+			from{filter: brightness(100%);}
+			to{filter: brightness(30%);}
+		}
+		#banner-one{
+			margin: auto;
+			margin-top: 20%;
+			color: #fff;
+		}
+		#banner-two{
+			margin: auto;
+			margin-top: 5%;
+			display: none;
+		}
+		#banner-one .img-fluid{
+			width: 100%;
+		}
+		#banner-two .img-fluid{
+			width: 100%;
+		}
+		#navbar{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+    		display: none;
+		}
+		#navbar .navbar-link-custom{
+			color: rgba(255, 255, 255, 1);
+			border-radius: 0px;
+			border-bottom: 2px solid rgba(255, 255, 255, 0);
+			box-shadow: unset;
+			transform: color;
+			font-size: 24px;
+		}
+		#navbar .navbar-link-custom:hover{
+			font-weight: bold;
+			color: rgba(252, 229, 0, 1);
+			border-bottom: 2px solid rgba(39, 80, 155, 1);
+			transition: 0.3s ease-in;
+		}
+		#navbar .actived-link{
+			font-weight: bold;
+			color: rgba(252, 229, 0, 1);
+			border-bottom: 2px solid rgba(39, 80, 155, 1);
+		}
+		.menu-item-custom{
+			margin-top: 50px;
+			width: 100%;
+			height: 250px;
+			display: none;
+		}
+		.menu-item-custom ul{
+			list-style: none;
+		}
+		.menu-item-custom .menu-link-custom{
+			color: rgba(255, 255, 255, 1);
+			border-radius: 0px;
+			border-bottom: 2px solid rgba(255, 255, 255, 0);
+			box-shadow: unset;
+			display: inline;
+			text-decoration: none;
+			padding: 5px;
+			font-size: 24px;
+
+    	}
+		.menu-item-custom .menu-link-custom:hover{
+			color: rgba(252, 229, 0, 1);
+			border-radius: 0px;
+		}
+		.icon{
+			color: rgba(39, 80, 155, 1);
+			display: none;
+		}
+		.contact-item-custom{
+			margin-top: 50px;
+			width: 100%;
+			height: 250px;
+			display: none;
+		}
+		.contact-item-custom .form-control{
+			margin-bottom: 10px;
+			border-radius: 0px;
+			border: unset;
+			background-color: transparent;
+			border-bottom: 2px solid #fff;
+			color: #fff;
+			font-size: 24px;
+		}
+		.setting-item-custom{
+			margin-top: 50px;
+			width: 100%;
+			height: 250px;
+			display: none;
+		}
+		.setting-item-custom .form-control{
+			margin-bottom: 10px;
+			border-radius: 0px;
+			border: unset;
+			background-color: transparent;
+			border-bottom: 2px solid #fff;
+			color: #fff;
+			font-size: 24px;
+			box-shadow: unset;
+		}
+		.setting-item-custom .form-control:focus{
+			color: rgba(252, 229, 0, 1);
+			border-bottom: 2px solid rgba(39, 80, 155, 1);
+		}
+		.btn.btn-form{
+			color: #fff;
+			box-shadow: unset;
+			font-size: 24px;
+		}
+		.btn.btn-form:hover{
+			color: rgba(39, 80, 155, 1);
+			background-color: rgba(252, 229, 0, 1);
+			font-weight: bold;
+			transition: background-color 0.3s ease-in, font-weight 0.3s ease-in, color 0.3s ease-in;
+		}
+		#button-scroll{
+			margin-top: 10%;
+			display: none;
+		}
+		#button-scroll .btn-light{
+			border:unset;
+			background-color: transparent;
+			color: rgba(255, 255, 255, 0.5);
+			box-shadow: unset;
+		}
+		#button-scroll .btn-light:hover{
+			color: rgba(255, 255, 255, 0.8);
+			transition: color 0.3s ease-in-out;
+		}
+		.fake-loading{
+			margin: 0;
+			padding: 0;
+    		width: 50%;
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		margin-right: -50%;
+    		transform: translate(-50%, -50%);
+			text-align: center;
+			z-index: 98;
+			color: white;
+			display: none;
+		}
+		.fake-loading .fa{
+			opacity: 0;
+			color:rgba(252, 229, 0, 0.5);
+		}
+		@keyframes bounce{
+			from{opacity: 0}
+			to{opacity: 1}
+		}
+		.text-present{
+			border-right: 1px solid #fff;
+		}
+		.text-present-2{
+			border-left: 1px solid #fff;
+		}

@@ -1,0 +1,142 @@
+		@font-face{
+		font-family: "Raleway";
+		src: url('../../Font/Raleway-Thin.ttf');
+	}
+	*{
+		margin: 0px;
+		padding: 0px;
+		font-family: "Raleway";
+	}
+	body{
+		color: #fff;
+	}
+	.bg-image{
+		position: fixed;
+		background-image: url('../../../assets/img/michelin-detail-2560x1440.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		filter: blur(0px);
+		width: 100%;
+		height: 100%;
+		z-index: -100;
+		display: none;
+	}
+	.fake-loading{
+		margin: 0;
+		padding: 0;
+    	width: 50%;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%);
+		text-align: center;
+		z-index: 98;
+		color: white;
+		display: none;
+	}
+	.fake-loading .fa{
+		opacity: 1;
+		color:rgba(252, 229, 0, 0.5);
+	}
+	@keyframes bounce{
+		from{opacity: 1}
+		to{opacity: 0}
+	}
+	@keyframes blurry{
+		from{filter: blur(0px);}
+		to{filter: blur(5px);}
+	}
+	.product{
+		background-color: rgba(0, 0, 0, 0.6);
+		position: relative;
+		transition: transform 2s;
+		border-radius: 5px;
+		transform-style: preserve-3d;
+	}
+	.product, .img-banner{
+		display: none;
+	}
+	.img-banner img{
+		height: 100px;
+		width: 40%;
+	}
+	.product-list{
+	}
+	.btn, .btn-xl{
+		box-shadow: unset;
+	}
+	.text-product{
+		text-decoration: none;
+		color: #fff;
+		box-shadow: unset;
+	}
+	.text-product:hover{
+		color: rgba(39, 80, 155, 1);
+		background-color: rgba(252, 229, 0, 1);
+		box-shadow: unset;
+		font-weight: bold;
+		transition: all 1s ease;
+	}
+	.text-product:active{
+		color: rgba(39, 80, 155, 1);
+		background-color: rgba(252, 229, 0, 1);
+		box-shadow: unset;
+		font-weight: bold;
+		transition: all 1s ease;
+	}
+	.text-product-2{
+		text-decoration: none;
+		color: rgba(39, 80, 155, 1);
+		background-color: rgba(252, 229, 0, 1);
+		font-weight: bold;
+		box-shadow: unset;
+	}
+	.text-product-2:hover{
+		box-shadow: unset;
+		background-color: rgba(39, 80, 155, 1);
+		color: rgba(252, 229, 0, 1);
+		transition: all 1s ease;
+	}
+	.text-product-2:active{
+		box-shadow: unset;
+		background-color: rgba(39, 80, 155, 1);
+		color: rgba(252, 229, 0, 1);
+		transition: all 1s ease;
+	}
+	.this-product{
+		display: none;
+	}
+	.modal.fade .modal-dialog.modal-dialog-zoom{
+		-webkit-transform: translate(0,0)scale(.5);
+		transform: translate(0,0)scale(.5);
+	}
+	.modal.show .modal-dialog.modal-dialog-zoom{
+		-webkit-transform: translate(0,0)scale(1);
+		transform: translate(0,0)scale(1);
+	}
+	.progress{
+		background-color: rgba(39, 80, 155, 1);
+	}
+	.progress-bar{
+		color: rgba(39, 80, 155, 1);
+		font-weight: bold;
+		background-color: rgba(252, 229, 0, 1);
+	}
+	.modal-content-custom{
+		border-radius: 5px;
+		border:unset;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.modal-content-custom .modal-header{
+		border-bottom: unset;
+		border-top-left-radius: unset;
+		border-top-right-radius: unset;
+	}
+	.modal-content-custom .modal-footer{
+		border-top: unset; 
+		border-bottom-right-radius: unset;
+		border-bottom-left-radius: unset;
+	}
